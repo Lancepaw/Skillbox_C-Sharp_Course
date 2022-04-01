@@ -26,7 +26,7 @@ static void Main()
 			break;
 		}
 		else if( int.Parse( tmp ) == res )
-		{	WriteLine( "\nВы угадали!" );
+		{	WriteLine( $"\nВы угадали, было загадано число { res }!" );
 			break;
 		}
 		else if( int.Parse( tmp ) > res )
