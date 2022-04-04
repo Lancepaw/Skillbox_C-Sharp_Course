@@ -6,8 +6,8 @@ namespace ConsoleApp_task_4_2{
 static class Program{
 
 static void Main()
-{	int    length ;
-	int[]  numbers;
+{	int    length, min ;
+	int[]  numbers     ;
 
 	WriteLine( "Введите длину последовательности.\n" );
 	length = int.Parse( ReadLine() );
@@ -21,7 +21,14 @@ static void Main()
 		WriteLine(); 
 	}
 
-	WriteLine( $"\nНаименьшее число в вашей последовательности: { numbers.Min() }." );
+	min = numbers[0];
+
+	for( int i = 1; i < length ; i++ )
+	{	if( numbers[i] < min )
+			min = numbers[i];
+	}
+
+	WriteLine( $"\nНаименьшее число в вашей последовательности: { min }." );
 	ReadLine();
 }
 	
