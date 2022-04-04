@@ -24,7 +24,7 @@ static void Main()
 	WriteLine( "\nМатрица:\n" );
 	for( int i = 0; i < height; i++ )
 	{	for( int j = 0; j < width; j++ )
-		{	matrix[ i, j ] = randomizer.Next(1,100);
+		{	matrix[ i, j ] = randomizer.Next( int.MinValue,int.MaxValue );
 			summary += matrix[ i, j ];
 			Write( $"{ matrix[ i, j ] } " );
 		}

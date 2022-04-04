@@ -21,9 +21,7 @@ static void Main()
 		WriteLine(); 
 	}
 
-	Array.Sort( numbers );
-
-	WriteLine( $"\nНаименьшее число в вашей последовательности: { numbers[ 0 ] }." );
+	WriteLine( $"\nНаименьшее число в вашей последовательности: { numbers.Min() }." );
 	ReadLine();
 }
 	
